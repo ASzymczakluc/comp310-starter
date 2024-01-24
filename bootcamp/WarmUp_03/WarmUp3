@@ -1,1 +1,14 @@
-#
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+  int thing[] = {1,2,3,4,5};
+  int sum = 0; 
+  for (for x = 5){
+    sum += thing[x];
+    }
+  average = sum / 5; 
+  printf("Sum:" + sum); 
+  printf("Average:" + average); 
+  return 0;
+}
