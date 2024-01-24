@@ -4,7 +4,8 @@
 int main(){
   int thing[] = {1,2,3,4,5};
   int sum = 0; 
-  for (for x = 5){
+//maybe should be i < 4
+  for (i = 0, i < 5, i++){
     sum += thing[x];
     }
   average = sum / 5; 
