@@ -3,6 +3,13 @@
 
 int main(){
   char String[] = "Hello";
-  for(
+  char Rev[] = "";
+  int count = 0;
+  for(i = 5, i > 0, --i){
+    char loc[i];
+    char Rev[count] = char loc[i];
+    ++count; 
+  }
+printf(Rev);
 
 }
