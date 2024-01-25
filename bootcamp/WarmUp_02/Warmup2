@@ -9,9 +9,9 @@ int main(){
 //should this be %lf for double?????
   printf("number 2: \n");
   scanf("%d", &num2);
-  printf("Add:" + (num1 + num2));
-  printf("Subtract:" + (num1 - num2));
-  printf("Multiply:" + (num1 * num2));
-  printf("Divide:" + (num1 / num2));
+  printf("Add:", (num1 + num2));
+  printf("Subtract:",  (num1 - num2));
+  printf("Multiply:", (num1 * num2));
+  printf("Divide:", (num1 / num2));
   return 0;
 }
