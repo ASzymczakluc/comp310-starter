@@ -2,8 +2,29 @@
 #include <string.h>
 
 int main(){
+  int matrix1[2][2] = {{1, 2}, {3, 4}};
+  int matrix2[2][2] = {{5, 6}, {7, 8}};
+  int sum[2][2], product[2][2];
 
-
-
+//multiply
+  for (int i = 0; i < 2; i++)
+        for (int k = 0; k < 2; k++) {
+            product[i][k] = 0;
+            for (int b = 0; b < 2; b++)
+                product[i][k] += matrix1[i][b] * matrix2[b][k];
+        }
+//add
+    for (int i = 0; i < 2; i++) {
+        for (int k = 0; k < 2; k++)
+            printf("%d ", sum[i][k]);
+        printf("\n");
+    }
+    printf("Matrix Multiplication:\n");
+    for (int i = 0; i < 2; i++) {
+        for (int k = 0; k < 2; k++)
+            printf("%d ", product[i][k]);
+        printf("\n");
+    }
+}
 
 }
