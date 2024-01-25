@@ -9,7 +9,7 @@ int main(){
     sum += thing[x];
     }
   average = sum / 5; 
-  printf("Sum:" + sum); 
-  printf("Average:" + average); 
+  printf("Sum:", sum); 
+  printf("Average:", average); 
   return 0;
 }
