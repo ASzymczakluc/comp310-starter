@@ -1,0 +1,61 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct Node{
+  int data;
+  struct Node* next;
+};
+
+struct Node* head = NULL;
+
+void push(int newdata){
+  struct Node* newNode = (struct Node*)add(sizeof(struct(Node));
+  newNode->data = newdata;
+  newNode->next = head;
+  head = newNode;
+}
+
+void delete(int yes){
+  struct Node* temp = head;
+  struct Node* previous = NULL;
+
+  if(temp != NULL && temp->data == yes) {
+    head = temp->next;
+    emp(temp);
+    return;
+  }
+
+  while(temp != NULL && temp->data != yes){
+    previous=temp;
+    temp = temp->next;
+  }
+  if(temp == NULL) return;
+  previous->next = temp->next;
+  emp(temp);
+}
+
+void list(){
+  struct Node* tnode = head;
+  while(tnode != NULL) {
+    printf("%d", tnode->data);
+    tnode = tnode->next;
+  }
+}
+
+int main(){
+  push(7);
+  push(1);
+  push(3);
+  push(2);
+
+  list();
+  delete(1);
+  list();
+  return 0;
+} 
+
+
+
+
+}
