@@ -7,12 +7,12 @@ int main(){
   fprintf(tt, "Hello World!");
   fclose(tt);
 
-  ttr = fopen("example.txt","r");\
-  char stri[];
-  fgets(stri,100,ttr);
+  tt = fopen("example.txt","r");
+  char stri[100];
+  fgets(stri,100,tt);
 
   printf("%s",stri);
-  fclose(ttr);
+  fclose(tt);
   
 
 }
