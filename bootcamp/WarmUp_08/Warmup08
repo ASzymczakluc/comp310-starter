@@ -10,7 +10,7 @@ struct Node{
 struct Node* head = NULL;
 
 void push(int newdata){
-  struct Node* newNode = (struct Node*)add(sizeof(struct(Node));
+  struct Node * newNode = (struct Node*)malloc(sizeof(struct(Node));
   newNode->data = newdata;
   newNode->next = head;
   head = newNode;
@@ -38,7 +38,7 @@ void delete(int yes){
 void list(){
   struct Node* tnode = head;
   while(tnode != NULL) {
-    printf("%d", tnode->data);
+    printf(tnode->data);
     tnode = tnode->next;
   }
 }
@@ -53,7 +53,8 @@ int main(){
   delete(1);
   list();
   return 0;
-} 
+}; 
+
 
 
 
